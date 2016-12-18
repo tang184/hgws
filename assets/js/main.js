@@ -69,7 +69,6 @@ $(function() {
 				var switchTo = function(newPos, instant) {
 
 					var $slide, $navItem, left;
-					console.log($slides);
 
 					// Out of bounds? Bail.
 						if (newPos < 0
@@ -153,13 +152,10 @@ $(function() {
 				$slides.each(function() {
 
 					var $this = $(this),
-						$img = $this.children('img'),
 						id = $this.attr('id'),
-						position = $img.data('position'),
 						bg = {
 							image: $this.css('background-image'),
 							size: $this.css('background-size'),
-							position: $this.css('background-position'),
 							repeat: $this.css('background-repeat'),
 							attachment: $this.css('background-attachment')
 						},
@@ -173,7 +169,6 @@ $(function() {
 
 						// Assign image.
 							$this
-								.css('background-image', (bg.image ? bg.image + ',' : '') + 'url("' + $img.attr('src') + '")')
 								.css('background-size', (bg.size ? bg.size + ',' : '') + 'cover')
 								.css('background-position', (bg.position ? bg.position + ',' : '') + '0% 50%')
 								.css('background-repeat', (bg.repeat ? bg.repeat + ',' : '') + 'no-repeat')
@@ -184,7 +179,6 @@ $(function() {
 
 								x = $this.css('background-image');
 
-								$this.css('background-image', x.replace($img.attr('src'), 'invalid'));
 
 								window.setTimeout(function() {
 									$this.css('background-image', x);
@@ -193,7 +187,6 @@ $(function() {
 							}
 
 						// Hide <img>.
-							$img.hide();
 
 					// Links.
 						$body.on('click', 'a[href="#' + id + '"]', function(event) {
@@ -214,11 +207,6 @@ $(function() {
 								||	!skel.canUse('transition')
 								||	$window.prop('orientation') == 0 || $window.prop('orientation') == 180
 								||	$window.width() < $window.height()) {
-
-									if (position)
-										$this.css('background-position', (bg.position ? bg.position + ',' : '') + position);
-									else
-										$this.css('background-position', (bg.position ? bg.position + ',' : '') + '0% 50%');
 
 								}
 								else {
