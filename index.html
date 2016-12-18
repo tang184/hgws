@@ -1,15 +1,12 @@
 <!DOCTYPE HTML>
-<!--
-	Landscape by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
+
 <html>
 
 <head>
 	<title>辉哥海鲜火锅</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" type="image/jpeg" href="images/pattern.jpg"/>
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
@@ -112,7 +109,7 @@
 						</div>
 					</div>				
 					<div class="col-md-5" style="height:100%">
-						<img id="lxwimg" style="width:60%; height:150%" src="images/lxw.png"></img>
+						<img id="lxwimg" style="width:80%; height:150%" src="images/lxw.png"></img>
 						<img id="xbbimg" style="width:80%; height:150%" src="images/xbb.jpg"></img>
 						<img id="xhnrimg" style="width:80%; height:150%" src="images/xhnr.jpg"></img>
 						<img id="dxbimg" style="width:80%; height:150%" src="images/dxb.jpg"></img>
@@ -132,18 +129,51 @@
 					<div class="col-md-4" style="color:black">
 						<div class="chainbox">
 							<div align="right" style="color:black">
-								<h3>上海</h3>
+								<h3 style="padding-right:25px">上海</h3>
 								<h3>Shanghai</h3>
 								<hr>
 							</div>
-							<div>
-								
-
+							<div align="left">
+								<div class="chain1" id="lk">
+		            				洛克&middot;外滩源店
+			            			<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+								</div>
+								<div class="chain1" id="pd">
+				            		浦东店
+				            		<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+								</div>
+								<div class="chain1" id="jl">
+				            		巨鹿店
+				            		<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+								</div>
+								<div class="chain1" id="hq">
+				            		虹桥店
+				            		<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="col-md-5">
-						<img style="width:100%" src="images/intro1.png"></img>
+						<div class="chainbox2">
+							<div class="chainspec col-md-10" id="chaintitle">洛克&middot;外滩源店</div>
+							<div class="col-md-2" style="background-color:#2b2b2b; height: 50px;">
+				            	<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+				        	</div>
+							
+							<div>
+								<div id="map"></div>
+								<div style="padding-top:80%">
+									<div id="chaininfo">
+										地址：<br>
+										<a href="" >上海市浦东新区松林路281号新港大厦</a>
+										<br>
+										电话：021-5035-2122
+										<br>
+										营业时间：11:00 - 02:00
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</article>
@@ -156,7 +186,7 @@
 						<p>To provide entrepreneurial resources for entrepreneurs promoting education, camaraderie, community involvement, access to resources and an opportunity for growth. </p>
 						<p>We will support entrepreneurs through all stages of business development.</p>
 					</div>-->
-					<div id="contactimage" class="col-md-4">
+					<div id="contactimage" class="col-md-4 col-xs-12">
 						<img style="width:120%; height:120%;" src="images/contact.png"></img>
 					</div>
 				</div>
@@ -522,6 +552,25 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         	}
         });
         
+    </script>
+
+    <script>
+		$("#lk").click(function() {
+			$("#chaintitle").text("洛克外滩源店");
+			$("#chaininfo").replaceWith("地址：<br><a href=\"\" >上海市黄浦区圆明园路115号(近北京东路)</a><br>电话：021-5308-4808<br>营业时间：11:00 - 22:00");
+		});
+        $("#pd").click(function() {
+        	$("#chaintitle").text("浦东店");
+        	$("#chaininfo").replaceWith("地址：<br><a href=\"\" >上海市浦东新区松林路281号新港大厦</a><br>电话：021-5035-2122<br>营业时间：11:00 - 02:00");
+		});
+		$("#jl").click(function() {
+			$("#chaintitle").text("巨鹿店");
+			$("#chaininfo").replaceWith("地址：<br><a href=\"\" >上海市静安区巨鹿路795号（近富民路）</a><br>电话：021-5403-8811<br>营业时间：11:00 - 04:00");
+		});
+		$("#hq").click(function() {
+			$("#chaintitle").text("虹桥店");
+			$("#chaininfo").replaceWith("地址：<br><a href=\"\" >上海市长宁区虹桥路1829弄10号</a><br>电话：021-6275-5758<br>营业时间：11:00 - 02:00");
+		});
     </script>
 
 </body>
