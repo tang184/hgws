@@ -104,12 +104,30 @@ body, input, select, textarea {
     line-height: 1.65;
 }
 
-#product1{
+div.product1{
   font-size: 18pt;
   color: #9a7d4b;
   border:2.5px solid rgb(154,125,75);
   width:300px;
-  height:25px:
+  height:50px;
+  margin: 30px 0;
+}
+
+div.product1:hover{
+  font-size: 18pt;
+  background-color: #9a7d4b;
+  color: black;
+  cursor:pointer;
+  border:2.5px solid rgb(154,125,75);
+  width:300px;
+  height:50px;
+  margin: 30px 0;
+}
+
+img.imgpattern {
+    height:30px;
+    width:30px;
+    margin:8px 10px;
 }
 
 #contactimage{
@@ -177,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Bitter", serif;
     font-weight: 700;
     line-height: 1.4;
-    margin: 0 0 1em 0;
+    margin: 0 1em 1em 0;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -323,7 +341,7 @@ strong, b {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
+    color: #000000;
 }
 
 blockquote {
@@ -336,7 +354,8 @@ code {
 }
 
 hr {
-    border-bottom-color: #ffffff;
+    background-color:black;
+    height:2px;
 }
 
 
@@ -856,6 +875,10 @@ dl dd {
 
 ul.alt li {
     border-top-color: #ffffff;
+}
+
+div.chainbox {
+    border: solid 2px;;
 }
 
 

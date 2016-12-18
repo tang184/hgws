@@ -84,15 +84,39 @@
 
 			<!-- Two -->
 			<article id="product" class="slide style2">
-				<div class="inner" style="width:85%">
-				<div id="product1">
-            龙虾丸
-				</div>
-					<div class="col-md-4">
-						<img style="width:50%; height:50%" src="images/producttitle.png"></img>
+				<div class="inner" style="width:100%">
+					
+					<div class="col-md-3">
+						<img style="width:50%; height:50%; padding-top:50%" src="images/producttitle.png"></img>
 					</div>
+					<div class="col-md-4">
+						<div class="product1" id="lxw">
+		            		龙虾丸
+		            		<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+						</div>
+						<div class="product1" id="xbb">
+		            		象鼻蚌
+		            		<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+						</div>
+						<div class="product1" id="xhnr">
+		            		雪花牛肉
+		            		<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+						</div>
+						<div class="product1" id="dxb">
+		            		东星斑
+		            		<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+						</div>
+						<div class="product1" id="xsbw">
+		            		鲜四宝丸
+		            		<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
+						</div>
+					</div>				
 					<div class="col-md-5" style="height:100%">
-						<img style="width:150%; height:150%" src="images/product1.png"></img>
+						<img id="lxwimg" style="width:60%; height:150%" src="images/lxw.png"></img>
+						<img id="xbbimg" style="width:80%; height:150%" src="images/xbb.jpg"></img>
+						<img id="xhnrimg" style="width:80%; height:150%" src="images/xhnr.jpg"></img>
+						<img id="dxbimg" style="width:80%; height:150%" src="images/dxb.jpg"></img>
+						<img id="xsbwimg" style="width:80%; height:150%" src="images/xsbw.jpg"></img>
 					</div>
 
 				</div>
@@ -100,14 +124,26 @@
 
 			<!-- Three -->
 			<article id="chain" class="slide style2" style="background-color:#9a7d4b">
-				<div class="inner" style="width:85%" >
-					<div class="col-md-4">
-						<img style="width:40%; height:40%" src="images/chaintitle.png"></img>
+				<div class="inner" style="width:100%">
+					<div class="col-md-3">
+						<img style="width:60%; height:60%" src="images/chaintitle.png"></img>
 					</div>
-					<div class="col-md-8">
 
-						<p>To provide entrepreneurial resources for entrepreneurs promoting education, camaraderie, community involvement, access to resources and an opportunity for growth. </p>
-						<p>We will support entrepreneurs through all stages of business development.</p>
+					<div class="col-md-4" style="color:black">
+						<div class="chainbox">
+							<div align="right" style="color:black">
+								<h3>上海</h3>
+								<h3>Shanghai</h3>
+								<hr>
+							</div>
+							<div>
+								
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<img style="width:100%" src="images/intro1.png"></img>
 					</div>
 				</div>
 			</article>
@@ -115,7 +151,7 @@
 
 			<!-- Contact Us -->
 			<article id="contact" class="slide style2">
-				<div class="inner" style="width:85%">
+				<div class="inner" style="width:100%">
 					<!--<div class="col-md-8" style="height:100%">
 						<p>To provide entrepreneurial resources for entrepreneurs promoting education, camaraderie, community involvement, access to resources and an opportunity for growth. </p>
 						<p>We will support entrepreneurs through all stages of business development.</p>
@@ -129,7 +165,7 @@
 
 
 			<article id="xhg" class="slide style2" style="background-color:#9a7d4b">
-				<div class="inner" style="width:85%">
+				<div class="inner" style="width:100%">
 					<div class="col-md-4">
 						<img style="width:40%; height:40%" src="images/chaintitle.png"></img>
 					</div>
@@ -426,6 +462,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</div>
 
+
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 
@@ -434,6 +472,58 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
+
+	<script>
+		var showimage = $("#lxwimg");
+		var id = 0;
+		$("#xbbimg").hide();
+		$("#xhnrimg").hide();
+		$("#dxbimg").hide();
+		$("#xsbwimg").hide();
+		showimage.show();
+        $( "#lxw" ).click(function() {
+        	if (id != 0) {
+        		showimage.hide(1000);
+          		showimage = $("#lxwimg");
+          		id = 0;
+          		showimage.show();
+        	}
+        });
+        $( "#xbb" ).click(function() {
+          if (id != 1) {
+        		showimage.hide(1000);
+          		showimage = $("#xbbimg");
+          		id = 1;
+          		showimage.show();
+        	}
+        });
+        $( "#xhnr" ).click(function() {
+          	if (id != 2) {
+        		showimage.hide(1000);
+          		showimage = $("#xhnrimg");
+          		id = 2;
+          		showimage.show();
+        	}
+        });
+        $( "#dxb" ).click(function() {
+          	if (id != 3) {
+        		showimage.hide(1000);
+          		showimage = $("#dxbimg");
+          		id = 3;
+          		showimage.show();
+        	}
+        });
+        $( "#xsbw" ).click(function() {
+          	if (id != 4) {
+        		showimage.hide(1000);
+          		showimage = $("#xsbwimg");
+          		id = 4;
+          		showimage.show();
+        	}
+        });
+        
+    </script>
+
 </body>
 
 </html>
