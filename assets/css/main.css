@@ -104,6 +104,20 @@ body, input, select, textarea {
     line-height: 1.65;
 }
 
+#product1{
+  font-size: 18pt;
+  color: #9a7d4b;
+  border:2.5px solid rgb(154,125,75);
+  width:300px;
+  height:25px:
+}
+
+#contactimage{
+  position:relative;
+  left:390px;
+  bottom:15px;
+}
+
 @media screen and (max-width: 1680px) {
     body, input, select, textarea {
         font-size: 12pt;
@@ -130,7 +144,7 @@ a {
 
 a#go {
     color: #9a7d4b;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     border-bottom: none;
     padding-right: 20px;
@@ -138,13 +152,13 @@ a#go {
 
 a#go:hover {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
 }
 
 a:hover {
     border-bottom-color: transparent;
-    
+
 }
 
 strong, b {
@@ -324,6 +338,7 @@ code {
 hr {
     border-bottom-color: #ffffff;
 }
+
 
 
 /* Form */
@@ -1041,10 +1056,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #cb565a;
-    color: #ffffff;
-    height: 3.25em;
+    background-color: #282828;
+    color: #9a7d4b;
+    height: 2.75em;
     line-height: 3.25em;
+    font-size: 20px;
 }
 
 #header nav {
@@ -1087,8 +1103,8 @@ body {
     border: 0;
     line-height: 3.5em;
     height: 3.5em;
-    border-radius: 4px;
-    padding: 0 2em;
+    border-radius: 0px;
+    padding: 0 3em;
     font-family: "Bitter", serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -1098,11 +1114,13 @@ body {
 }
 
 #header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(154, 125, 75, 0.15);
+    color:inherit;
 }
 
 #header nav ul li a:active {
     background-color: rgba(255, 255, 255, 0.3);
+    color:inherit;
 }
 
 #header nav ul li:first-child {
@@ -1110,8 +1128,9 @@ body {
 }
 
 #header nav ul li.active a {
-    background-color: #ffffff;
-    color: #cb565a;
+    /*background-color: #9a7d4b;
+    color: #282828;*/
+    border-bottom: solid;
 }
 
 @media screen and (max-width: 980px) {

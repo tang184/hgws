@@ -69,6 +69,7 @@ $(function() {
 				var switchTo = function(newPos, instant) {
 
 					var $slide, $navItem, left;
+					console.log($slides);
 
 					// Out of bounds? Bail.
 						if (newPos < 0
