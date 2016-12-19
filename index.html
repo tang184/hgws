@@ -160,19 +160,18 @@
 				            	<img class="imgpattern" src="images/pattern.jpg" align="right"></img>
 				        	</div>
 							
-							<div>
-								<div id="map"></div>
-								<div style="padding-top:80%">
-									<div id="chaininfo">
-										地址：<br>
-										<a href="" >上海市浦东新区松林路281号新港大厦</a>
-										<br>
-										电话：021-5035-2122
-										<br>
-										营业时间：11:00 - 02:00
-									</div>
+								<div id="chainimage">
+									<img src="images/lk.png" style="width:100%"></img>
 								</div>
-							</div>
+
+								<div id="chaininfo">
+									地址：<br>
+									<a target="__blank" href="http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%BB%84%E6%B5%A6%E5%8C%BA%E5%9C%86%E6%98%8E%E5%9B%AD%E8%B7%AF115%E5%8F%B7" >上海市黄浦区圆明园路115号(近北京东路)</a>
+									<br>
+									电话：021-5308-4808
+									<br>
+									营业时间：11:00 - 22:00
+								</div>
 						</div>
 					</div>
 				</div>
@@ -557,19 +556,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script>
 		$("#lk").click(function() {
 			$("#chaintitle").text("洛克外滩源店");
-			$("#chaininfo").replaceWith("地址：<br><a href=\"\" >上海市黄浦区圆明园路115号(近北京东路)</a><br>电话：021-5308-4808<br>营业时间：11:00 - 22:00");
+			$("#chaininfo").replaceWith("<div id=\"chaininfo\">地址：<br><a target=\"blank\" href=\"http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%BB%84%E6%B5%A6%E5%8C%BA%E5%9C%86%E6%98%8E%E5%9B%AD%E8%B7%AF115%E5%8F%B7\" >上海市黄浦区圆明园路115号(近北京东路)</a><br>电话：021-5308-4808<br>营业时间：11:00 - 22:00</div>");
+			$("#chainimage img").attr("src", "images/lk.png")
 		});
         $("#pd").click(function() {
         	$("#chaintitle").text("浦东店");
-        	$("#chaininfo").replaceWith("地址：<br><a href=\"\" >上海市浦东新区松林路281号新港大厦</a><br>电话：021-5035-2122<br>营业时间：11:00 - 02:00");
+        	$("#chaininfo").replaceWith("<div id=\"chaininfo\">地址：<br><a target=\"blank\" href=\"http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E6%9D%BE%E6%9E%97%E8%B7%AF281%E5%8F%B7%E6%96%B0%E6%B8%AF%E5%A4%A7%E5%8E%A6\" >上海市浦东新区松林路281号新港大厦</a><br>电话：021-5035-2122<br>营业时间：11:00 - 02:00</div>");
+        	$("#chainimage img").attr("src", "images/pd.png")
 		});
 		$("#jl").click(function() {
 			$("#chaintitle").text("巨鹿店");
-			$("#chaininfo").replaceWith("地址：<br><a href=\"\" >上海市静安区巨鹿路795号（近富民路）</a><br>电话：021-5403-8811<br>营业时间：11:00 - 04:00");
+			$("#chaininfo").replaceWith("<div id=\"chaininfo\">地址：<br><a target=\"blank\" href=\"http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%99%E5%AE%89%E5%8C%BA%E5%B7%A8%E9%B9%BF%E8%B7%AF795%E5%8F%B7\" >上海市静安区巨鹿路795号（近富民路）</a><br>电话：021-5403-8811<br>营业时间：11:00 - 04:00</div>");
+			$("#chainimage img").attr("src", "images/jl.png");
 		});
 		$("#hq").click(function() {
 			$("#chaintitle").text("虹桥店");
-			$("#chaininfo").replaceWith("地址：<br><a href=\"\" >上海市长宁区虹桥路1829弄10号</a><br>电话：021-6275-5758<br>营业时间：11:00 - 02:00");
+			$("#chaininfo").replaceWith("<div id=\"chaininfo\">地址：<br><a target=\"blank\" href=\"http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%95%BF%E5%AE%81%E5%8C%BA%E8%99%B9%E6%A1%A5%E8%B7%AF1829%E5%BC%8410%E5%8F%B7\" >上海市长宁区虹桥路1829弄10号</a><br>电话：021-6275-5758<br>营业时间：11:00 - 02:00</div>");
+			$("#chainimage img").attr("src", "images/hq.png")
 		});
     </script>
 
