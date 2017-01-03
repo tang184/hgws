@@ -168,8 +168,9 @@
 				        	</div>
 
 								<div id="chainimage">
-									<img src="images/lk.png" style="width:100%"></img>
+									<img src="images/lk.png" style="width:100%; padding:20px"></img>
 								</div>
+								<hr>
 
 								<div id="chaininfo">
 									地址：<br>
@@ -586,13 +587,26 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script type="text/javascript">
     	$( "div.chainloc" ).hover(
 		  function() {
-		    $( this ).append( $( "<img src=\"images/pattern.jpg\" style=\"width:30px; padding-left:10px \"></img>" ) );
-		    $( this ).prepend( $( "<img src=\"images/pattern.jpg\" style=\"width:30px; padding-right:10px \"></img>" ) );
+		    $( this ).append( $( "<img src=\"images/bpattern.jpg\" style=\"width:30px; padding-left:10px \"></img>" ) );
+		    $( this ).prepend( $( "<img src=\"images/bpattern.jpg\" style=\"width:30px; padding-right:10px \"></img>" ) );
 		  }, function() {
 		  	$( this ).find( "img:first" ).remove();
 		    $( this ).find( "img:last" ).remove();
 		  }
 		);
+
+		$( "#bj" ).click(function() {
+
+		}
+		$( "#sh" ).click(function() {
+
+		}
+		$( "#sz" ).click(function() {
+
+		}
+		$( "#wh" ).click(function() {
+
+		}
     </script>
 
 </body>
