@@ -104,12 +104,52 @@ body, input, select, textarea {
     line-height: 1.65;
 }
 
+/* Page 1 */
+
+#frontpage{
+  position:relative;
+  left:180px;
+  bottom:10px;
+}
+
+#hgtitle{
+  position:relative;
+  top:10px;
+  left:100px;
+}
+
+     /* Page 2 */
+
+     #introtitle{
+       position:relative;
+       left:80px;
+       top:10px;
+     }
+
+     #intro1{
+       position:relative;
+       bottom:20px;
+       left:10px;
+     }
+
+     #introarticle{
+       position:relative;
+       top:210px;
+       right:60px;
+     }
+
+    /* Page 3 */
+
 div.product1{
   font-size: 18pt;
   color: #9a7d4b;
-  border:2.5px solid rgb(154,125,75);
+  border:3px solid rgb(154,125,75);
   height:50px;
   margin: 30px 0;
+  padding:0px 0px 0px 5px;
+  position:relative;
+  right:30px;
+  bottom:29px;
 }
 
 div.product1:hover{
@@ -121,6 +161,64 @@ div.product1:hover{
   height:50px;
   margin: 30px 0;
 }
+
+#producttitle{
+  position:relative;
+  top:82px;
+  left:30px;
+}
+
+#lxwimg{
+  position:relative;
+  right:10px;
+}
+
+#xbbimg{
+  position:relative;
+  right:10px;
+}
+
+#xhnrimg{
+  position:relative;
+  right:10px;
+}
+
+#dxbimg{
+  position:relative;
+  right:10px;
+}
+
+#xsbwimg{
+  position:relative;
+  right:10px;
+}
+
+div.chainlocbox {
+    padding: 30 10px;
+    color: #2b2b2b;
+}
+
+div.chainloc {
+    font-size: 25px;
+    padding: 30px;
+    color: #2b2b2b;
+    margin-left: 30px;
+}
+
+div.chainloc:hover {
+    font-size: 25px;
+    color: #2b2b2b;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+
+/* Page 4 */
+
+#chaintitle{
+  position:relative;
+}
+
 
 div.chain1{
   font-size: 18pt;
@@ -366,7 +464,7 @@ strong, b {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #000000;
+    color: #2b2b2b;
 }
 
 blockquote {
